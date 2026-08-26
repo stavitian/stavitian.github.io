@@ -51,12 +51,43 @@
       font-size: 1.1rem;
       line-height: 1.6;
     }
+
+    nav {
+      margin-top: 2rem;
+      display: flex;
+      gap: clamp(1rem, 4vw, 2.25rem);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: .82rem;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      padding: .45rem .15rem;
+      border-bottom: 1px solid transparent;
+      transition: color .25s ease, border-color .25s ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: #86efac;
+      border-color: #86efac;
+      outline: none;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>¡Hola! 👋</h1>
     <p><strong>stavitian.github.io</strong> está funcionando correctamente.</p>
+    <nav aria-label="Proyectos WebGL">
+      <a href="/nocturne/">NOCTURNE</a>
+      <a href="/nocturne/sanctum.html">SANCTVM</a>
+      <a href="/nocturne/singvlaris.html">SINGVLARIS</a>
+    </nav>
   </main>
 </body>
 </html>
