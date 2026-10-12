@@ -1,0 +1,125 @@
+/* Hoja de estilos común. Sin fuentes externas ni JavaScript. */
+:root {
+  color-scheme: light dark;
+  --bg: #fbfbfa;
+  --text: #1c1c1e;
+  --muted: #5f5f66;
+  --rule: #dcdcdf;
+  --link: #1f4f9a;
+  --code-bg: #f0f0f2;
+  --measure: 40rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --text: #e8e8ea;
+    --muted: #a0a0a8;
+    --rule: #34343a;
+    --link: #8db4f0;
+    --code-bg: #222226;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.0625rem;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.wrap.wide { max-width: 56rem; }
+
+a { color: var(--link); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+
+.skip {
+  position: absolute; left: -999px; top: 0;
+  background: var(--bg); padding: .5rem .75rem;
+}
+.skip:focus { left: 1rem; top: 1rem; }
+
+/* Cabecera y pie */
+.site-header {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: .5rem 1.5rem;
+  padding-bottom: 1rem; margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: .95rem;
+}
+.site-header .home { color: var(--text); font-weight: 600; text-decoration: none; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.site-header nav a[aria-current="page"] { color: var(--text); text-decoration: none; font-weight: 600; }
+
+.site-footer {
+  margin-top: 4rem; padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .9rem;
+}
+.site-footer p { margin: .25rem 0; }
+
+/* Tipografía */
+h1, h2, h3 { line-height: 1.25; font-weight: 600; letter-spacing: -0.01em; }
+h1 { font-size: 2rem; margin: 0 0 .75rem; }
+h2 { font-size: 1.25rem; margin: 3rem 0 1rem; }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 .35rem; }
+p, ul, ol, dl { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+li + li { margin-top: .25rem; }
+.lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 1.5rem; }
+.muted { color: var(--muted); }
+.small { font-size: .9rem; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+/* Listas de proyectos */
+.entries { list-style: none; padding: 0; margin: 0; }
+.entries > li { padding: 1rem 0; border-top: 1px solid var(--rule); margin: 0; }
+.entries > li:last-child { border-bottom: 1px solid var(--rule); }
+.entries h3 { margin: 0 0 .25rem; font-size: 1.05rem; }
+.entries p { margin: 0 0 .35rem; }
+.entries .meta { color: var(--muted); font-size: .9rem; }
+
+/* Página de la app */
+.app-head { display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1.5rem; }
+.app-head img { width: 120px; height: 72px; border-radius: 10px; flex: none; }
+.app-head h1 { margin: 0; }
+.app-head p { margin: .2rem 0 0; color: var(--muted); }
+
+.shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin: 2rem 0; }
+.shots figure { margin: 0; }
+.shots img { display: block; width: 100%; height: auto; border-radius: 6px; background: #000; }
+.shots figcaption { font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+
+.store-link {
+  display: inline-block; padding: .55rem 1rem;
+  border: 1px solid var(--text); border-radius: 6px;
+  color: var(--text); text-decoration: none; font-weight: 600;
+}
+.store-link:hover { background: var(--text); color: var(--bg); }
+
+/* Preguntas frecuentes */
+.faq dt { font-weight: 600; margin-top: 1.5rem; }
+.faq dd { margin: .35rem 0 0; }
+
+.lang { font-size: .9rem; }
+
+@media (max-width: 34rem) {
+  .wrap { padding-top: 2rem; }
+  h1 { font-size: 1.65rem; }
+  .shots { grid-template-columns: 1fr; }
+  .app-head img { width: 100px; height: 60px; }
+}

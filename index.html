@@ -3,91 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Página principal de stavitian en GitHub Pages">
-  <title>stavitian.github.io</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      padding: 1.5rem;
-      background:
-        radial-gradient(circle at top left, #1d4ed8 0, transparent 36rem),
-        #0f172a;
-      color: #e2e8f0;
-    }
-
-    main {
-      width: min(42rem, 100%);
-      padding: clamp(2rem, 6vw, 4rem);
-      text-align: center;
-      border: 1px solid rgb(148 163 184 / 25%);
-      border-radius: 1.25rem;
-      background: rgb(15 23 42 / 78%);
-      box-shadow: 0 2rem 5rem rgb(0 0 0 / 35%);
-      backdrop-filter: blur(12px);
-    }
-
-    h1 {
-      margin: 0 0 1rem;
-      font-size: clamp(2rem, 8vw, 4rem);
-      line-height: 1;
-      color: #86efac;
-    }
-
-    p {
-      margin: 0;
-      color: #cbd5e1;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    nav {
-      margin-top: 2rem;
-      display: flex;
-      gap: clamp(1rem, 4vw, 2.25rem);
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #cbd5e1;
-      text-decoration: none;
-      font-size: .82rem;
-      letter-spacing: .24em;
-      text-transform: uppercase;
-      padding: .45rem .15rem;
-      border-bottom: 1px solid transparent;
-      transition: color .25s ease, border-color .25s ease;
-    }
-
-    nav a:hover,
-    nav a:focus-visible {
-      color: #86efac;
-      border-color: #86efac;
-      outline: none;
-    }
-  </style>
+  <title>stavitian</title>
+  <meta name="description" content="Ingeniero informático. Desarrollo apps para plataformas de Apple.">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>¡Hola! 👋</h1>
-    <p><strong>stavitian.github.io</strong> está funcionando correctamente.</p>
-    <nav aria-label="Proyectos WebGL">
-      <a href="/nocturne/">NOCTURNE</a>
-      <a href="/nocturne/sanctum.html">SANCTVM</a>
-      <a href="/nocturne/singvlaris.html">SINGVLARIS</a>
-    </nav>
-  </main>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="home" href="/">stavitian</a>
+      <nav aria-label="Secciones">
+        <a href="#apps">Apps</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <!-- TODO: añadir el nombre real si se quiere mostrar junto al usuario. -->
+      <h1>stavitian</h1>
+      <p class="lead">Ingeniero informático. Desarrollo apps para plataformas de Apple.</p>
+      <p>Me interesan la seguridad, la virtualización, los contenedores y todo lo que tenga que ver con Apple.</p>
+      <!-- TODO: biografía más larga (opcional). -->
+
+      <h2 id="apps">Apps</h2>
+      <ul class="entries">
+        <li>
+          <h3><a href="/apps/chillscenes/">ChillScenes</a></h3>
+          <p>Escenas animadas y sonidos de ambiente para Apple TV. Dieciséis escenas generadas en tiempo real, cada una con su mezclador de sonido y un temporizador para dormir.</p>
+          <p class="meta">tvOS 26 · <a href="/apps/chillscenes/soporte/">Soporte</a> · <a href="/apps/chillscenes/privacidad/">Privacidad</a></p>
+        </li>
+      </ul>
+
+      <h2 id="proyectos">Proyectos</h2>
+      <ul class="entries">
+        <li>
+          <h3><a href="/nocturne/">NOCTURNE</a></h3>
+          <p>Piezas WebGL en un solo archivo HTML, sin imágenes ni librerías: todo se calcula en el navegador.</p>
+          <ul>
+            <li><a href="/nocturne/">NOCTURNE</a>: un cielo nocturno vivo.</li>
+            <li><a href="/nocturne/sanctum.html">SANCTVM</a>: catedrales matemáticas que se transforman.</li>
+            <li><a href="/nocturne/singvlaris.html">SINGVLARIS</a>: un agujero negro con lente gravitacional real.</li>
+          </ul>
+          <p class="meta"><a href="https://github.com/stavitian/nocturne">Código fuente</a></p>
+        </li>
+        <!-- TODO: confirmar qué repositorios públicos se muestran aquí (descripciones tomadas de GitHub). -->
+        <li>
+          <h3><a href="https://github.com/stavitian/solar">solar</a></h3>
+          <p>Explorador 3D interactivo del sistema solar con efemérides locales, satélites naturales, viaje en el tiempo y una edición HTML sin conexión.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/stavitian/yue2-studio">yue2-studio</a></h3>
+          <p>App e instalador para macOS que ejecutan en local la generación musical YuE2-3B, versiones y transcripción en Apple Silicon (MLX), con ajustes para Macs de 24 GB.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/stavitian/NanoMAC">NanoMAC</a></h3>
+          <p>Análisis de los servicios en ejecución en sistemas macOS.</p>
+        </li>
+      </ul>
+
+      <h2 id="contacto">Contacto</h2>
+      <ul>
+        <li>GitHub: <a href="https://github.com/stavitian">github.com/stavitian</a></li>
+        <!-- TODO: sustituir por el correo de contacto real. -->
+        <li>Correo: <a href="mailto:[CORREO DE CONTACTO]">[CORREO DE CONTACTO]</a></li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 stavitian</p>
+    </footer>
+  </div>
 </body>
 </html>
