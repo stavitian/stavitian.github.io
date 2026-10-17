@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChillScenes para Apple TV</title>
-  <meta name="description" content="Escenas relajantes y sonidos de ambiente para Apple TV.">
+  <title>ChillScenes: escenas de ambiente y sonidos para relajarte, concentrarte y dormir</title>
+  <meta name="description" content="ChillScenes: escenas de ambiente con shaders originales y un mezclador de sonido para relajarte, concentrarte y dormir. Para Apple TV, iPhone, iPad y Android.">
   <link rel="alternate" hreflang="es" href="https://stavitian.github.io/apps/chillscenes/">
   <link rel="alternate" hreflang="en" href="https://stavitian.github.io/apps/chillscenes/en/">
   <link rel="icon" href="/apps/chillscenes/img/icono-200.jpg">
@@ -29,85 +29,99 @@
         </picture>
         <div>
           <h1>ChillScenes</h1>
-          <p>Escenas relajantes y sonidos para Apple TV</p>
+          <p>Escenas de ambiente y sonidos para relajarte, concentrarte y dormir</p>
         </div>
       </div>
 
-      <p class="lead">ChillScenes convierte tu Apple TV en una ventana a lugares tranquilos. Elige una escena, ajusta el sonido a tu gusto y deja que la tele cree el ambiente mientras lees, trabajas, cenas o te vas a dormir.</p>
-      <p>Cada escena se genera en tiempo real en tu Apple TV con Metal. No son vídeos en bucle: el movimiento nunca se repite igual, no hay cortes, no hay que esperar a que nada cargue y funciona sin conexión.</p>
+      <p class="lead">Escenas de ambiente creadas con shaders originales y un mezclador de sonido para cada una. Elige un lugar tranquilo, ajusta cómo suena y deja que ChillScenes cree el ambiente mientras descansas, trabajas o te vas a dormir.</p>
 
-      <!-- TODO: sustituir por el enlace real del App Store cuando la app esté publicada. -->
-      <p><a class="store-link" href="[ENLACE DEL APP STORE]">Ver en el App Store</a></p>
+      <ul class="platforms" aria-label="Plataformas">
+        <li>Apple TV</li>
+        <li>iPhone</li>
+        <li>iPad</li>
+        <li>Android</li>
+      </ul>
 
-      <div class="shots">
+      <h2 id="disponible">Disponible en App Store y Google Play</h2>
+      <p>ChillScenes aún no está publicada. Llegará pronto al App Store (Apple TV, iPhone y iPad) y a Google Play (Android).</p>
+      <!--
+        Enlaces de las tiendas: la app todavía no está publicada.
+        App Store (bundle org.chillscenes.tv): [ENLACE DEL APP STORE], p. ej. https://apps.apple.com/es/app/chillscenes/idXXXXXXXXXX
+        Google Play (paquete org.chillscenes.android): https://play.google.com/store/apps/details?id=org.chillscenes.android
+        Cuando estén publicadas, sustituir la lista .stores por las insignias oficiales (ya incluidas en /apps/chillscenes/img/badges/;
+        según las normas de Apple y Google, las insignias solo se muestran enlazadas a la ficha real de la app):
+        <ul class="stores">
+          <li><a href="[ENLACE DEL APP STORE]"><img src="/apps/chillscenes/img/badges/app-store-es.svg" width="135" height="45" alt="Descárgalo en el App Store"></a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=org.chillscenes.android"><img src="/apps/chillscenes/img/badges/google-play-es.png" width="168" height="65" alt="Disponible en Google Play"></a></li>
+        </ul>
+      -->
+      <ul class="stores">
+        <li><span class="store-soon" aria-disabled="true"><strong>App Store</strong><span>Próximamente</span></span></li>
+        <li><span class="store-soon" aria-disabled="true"><strong>Google Play</strong><span>Próximamente</span></span></li>
+      </ul>
+
+      <h2>Capturas</h2>
+      <h3>Apple TV</h3>
+      <div class="shots-tv">
         <figure>
-          <picture>
-            <source type="image/webp" srcset="/apps/chillscenes/img/aurora-640.webp 640w, /apps/chillscenes/img/aurora-1280.webp 1280w" sizes="(max-width: 34rem) 100vw, 28rem">
-            <img src="/apps/chillscenes/img/aurora-1280.jpg" srcset="/apps/chillscenes/img/aurora-640.jpg 640w, /apps/chillscenes/img/aurora-1280.jpg 1280w" sizes="(max-width: 34rem) 100vw, 28rem" width="1280" height="720" loading="lazy" alt="Aurora boreal sobre un lago con montañas">
-          </picture>
+          <img src="/apps/chillscenes/img/shots/tvos-01-landing-es.webp" width="1280" height="720" alt="Pantalla de inicio de ChillScenes en Apple TV con la escena Océano de fondo">
+          <figcaption>Pantalla de inicio</figcaption>
+        </figure>
+        <figure>
+          <img src="/apps/chillscenes/img/shots/tvos-05-options-mixer-es.webp" width="1280" height="720" loading="lazy" alt="Menú de opciones con el mezclador de sonido">
+          <figcaption>Mezclador de sonido</figcaption>
+        </figure>
+        <figure>
+          <img src="/apps/chillscenes/img/shots/tvos-09-scene-borealis-original-es.webp" width="1280" height="720" loading="lazy" alt="Escena Aurora boreal sobre un lago con montañas">
           <figcaption>Aurora boreal</figcaption>
         </figure>
+      </div>
+      <h3>iPhone</h3>
+      <div class="shots-phone">
         <figure>
-          <picture>
-            <source type="image/webp" srcset="/apps/chillscenes/img/fuego-640.webp 640w, /apps/chillscenes/img/fuego-1280.webp 1280w" sizes="(max-width: 34rem) 100vw, 28rem">
-            <img src="/apps/chillscenes/img/fuego-1280.jpg" srcset="/apps/chillscenes/img/fuego-640.jpg 640w, /apps/chillscenes/img/fuego-1280.jpg 1280w" sizes="(max-width: 34rem) 100vw, 28rem" width="1280" height="720" loading="lazy" alt="Llamas de una hoguera sobre fondo negro">
-          </picture>
-          <figcaption>Fuego</figcaption>
+          <img src="/apps/chillscenes/img/shots/iphone-01-grid-nature-es.webp" width="600" height="1304" loading="lazy" alt="Cuadrícula de escenas de la colección Naturaleza en iPhone">
+          <figcaption>Escenas</figcaption>
         </figure>
         <figure>
-          <picture>
-            <source type="image/webp" srcset="/apps/chillscenes/img/nieve-640.webp 640w, /apps/chillscenes/img/nieve-1280.webp 1280w" sizes="(max-width: 34rem) 100vw, 28rem">
-            <img src="/apps/chillscenes/img/nieve-1280.jpg" srcset="/apps/chillscenes/img/nieve-640.jpg 640w, /apps/chillscenes/img/nieve-1280.jpg 1280w" sizes="(max-width: 34rem) 100vw, 28rem" width="1280" height="720" loading="lazy" alt="Nieve cayendo vista desde una ventana de cuatro paneles">
-          </picture>
-          <figcaption>Nieve en la ventana</figcaption>
+          <img src="/apps/chillscenes/img/shots/iphone-04-mixer-sheet-es.webp" width="600" height="1304" loading="lazy" alt="Mezclador de sonido con los volúmenes de cada capa">
+          <figcaption>Mezclador</figcaption>
         </figure>
         <figure>
-          <picture>
-            <source type="image/webp" srcset="/apps/chillscenes/img/vaporfuji-640.webp 640w, /apps/chillscenes/img/vaporfuji-1280.webp 1280w" sizes="(max-width: 34rem) 100vw, 28rem">
-            <img src="/apps/chillscenes/img/vaporfuji-1280.jpg" srcset="/apps/chillscenes/img/vaporfuji-640.jpg 640w, /apps/chillscenes/img/vaporfuji-1280.jpg 1280w" sizes="(max-width: 34rem) 100vw, 28rem" width="1280" height="720" loading="lazy" alt="Montaña bajo un sol al atardecer en estilo synthwave">
-          </picture>
+          <img src="/apps/chillscenes/img/shots/iphone-08-scene-vaporfuji-es.webp" width="600" height="1304" loading="lazy" alt="Escena Vaporfuji: montaña bajo un sol synthwave">
           <figcaption>Vaporfuji</figcaption>
         </figure>
       </div>
 
-      <h2>16 escenas en tres colecciones</h2>
+      <h2>Qué ofrece</h2>
       <ul>
-        <li><strong>Naturaleza:</strong> Océano, Nubes, Chispas, Río, Playa, Desierto, Bandada y Aurora boreal.</li>
-        <li><strong>Interiores:</strong> Carretera, Fuego, Lluvia en el cristal y Nieve en la ventana.</li>
-        <li><strong>Movimiento:</strong> Vaporfuji, Texto fantasma, Noche estrellada y Flor de neón.</li>
-      </ul>
-
-      <h2>Un mezclador de sonido en cada escena</h2>
-      <p>Cada escena tiene su propio paisaje sonoro, y tú decides cómo suena:</p>
-      <ul>
-        <li>Dos sonidos de ambiente continuos, cada uno con su volumen.</li>
-        <li>Dos sonidos ocasionales que aparecen al azar, como un trueno lejano o un tronco que cruje.</li>
-        <li>Elige si los sonidos ocasionales aparecen rara vez, a ritmo normal o a menudo.</li>
-      </ul>
-
-      <h2>Para dormir</h2>
-      <p>El temporizador para dormir baja la imagen a negro y el sonido a silencio poco a poco. Después, el Apple TV puede entrar en reposo como siempre.</p>
-
-      <h2>Cambio de escena automático</h2>
-      <p>ChillScenes puede pasar a otra escena al azar cada pocos minutos, con transiciones suaves. O quédate en tu favorita todo el tiempo que quieras.</p>
-
-      <h2>Pensada para el Siri Remote</h2>
-      <ul>
-        <li>Abre la app y tu última escena empieza sola.</li>
-        <li>Controles sencillos con el diseño Liquid Glass de tvOS 26.</li>
-        <li>Ajuste de brillo dentro de la app, para la noche o para un salón luminoso.</li>
-        <li>Disponible en 20 idiomas.</li>
+        <li><strong>16 escenas en tres colecciones.</strong> Naturaleza (Océano, Nubes, Chispas, Río, Playa, Desierto, Bandada y Aurora boreal), Interiores (Carretera, Fuego, Lluvia en el cristal y Nieve en la ventana) y Movimiento (Vaporfuji, Texto fantasma, Noche estrellada y Flor de neón).</li>
+        <li><strong>Generadas en tiempo real.</strong> Cada escena es un shader original que se calcula en tu dispositivo: no son vídeos en bucle, el movimiento nunca se repite igual y funciona sin conexión.</li>
+        <li><strong>Un mezclador de sonido en cada escena.</strong> Dos sonidos de ambiente continuos y dos sonidos ocasionales, cada uno con su volumen, y tú decides con qué frecuencia aparecen.</li>
+        <li><strong>Temporizador para dormir.</strong> La imagen se funde a negro y el sonido a silencio poco a poco.</li>
+        <li><strong>Cambio de escena automático</strong> con transiciones suaves, ajuste de brillo y 20 idiomas.</li>
       </ul>
 
       <h2>Prueba gratis, paga una vez</h2>
-      <p>Descarga ChillScenes gratis y disfruta de Nubes y Carretera sin límite de tiempo. Si te gusta, una única compra desbloquea todas las escenas y toda la biblioteca de sonidos del mezclador. Sin suscripciones ni pagos recurrentes.</p>
+      <p>Descarga ChillScenes gratis y disfruta de Nubes y Carretera sin límite de tiempo. Si te gusta, una única compra desbloquea todas las escenas y toda la biblioteca de sonidos. Sin suscripciones ni pagos recurrentes. La compra se gestiona a través del App Store o de Google Play.</p>
 
       <h2>Privacidad</h2>
-      <p>Sin cuenta, sin anuncios, sin rastreo y sin recopilar datos. Tus ajustes se quedan en tu Apple TV. Más detalles en la <a href="/apps/chillscenes/privacidad/">política de privacidad</a>.</p>
+      <p>Sin cuenta, sin anuncios, sin rastreo y sin recopilar datos. Tus ajustes se guardan solo en tu dispositivo. Más detalles en la <a href="/apps/chillscenes/privacidad/">política de privacidad</a>.</p>
 
       <h2>Requisitos</h2>
-      <p>Apple TV con tvOS 26 o posterior.</p>
-      <p>¿Dudas o problemas? Consulta la página de <a href="/apps/chillscenes/soporte/">soporte</a>.</p>
+      <dl class="facts">
+        <dt>Apple TV</dt><dd>tvOS 26 o posterior</dd>
+        <dt>iPhone</dt><dd>iOS 26 o posterior</dd>
+        <dt>iPad</dt><dd>iPadOS 26 o posterior</dd>
+        <dt>Android</dt><dd>Android 8.0 o posterior</dd>
+      </dl>
+
+      <h2>Soporte y contacto</h2>
+      <p>Preguntas frecuentes, cómo restaurar la compra y más en la página de <a href="/apps/chillscenes/soporte/">soporte</a>. También puedes escribir a <a href="mailto:stavitian@gmail.com">stavitian@gmail.com</a>.</p>
+
+      <h2>Créditos</h2>
+      <p>Desarrollo: Santiago Tavitian.<br>
+      Shaders por stavi49 (Santiago Tavitian).</p>
+      <p class="small muted">Apple, Apple TV, iPhone, iPad y App Store son marcas de Apple Inc. Google Play y Android son marcas de Google LLC.</p>
     </main>
 
     <footer class="site-footer">
